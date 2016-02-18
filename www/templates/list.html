@@ -1,0 +1,16 @@
+<ion-view title="List">
+  <ion-content padding="true" class="has-header">
+    <div class="list" ng-controller="ListCtrl">
+
+      <div ng-repeat="n in elements">
+        <div class="item item-divider">
+          {{n.day}}
+        </div>
+        <a class="item" ng-href="#/elements/{{n.id}}">
+          {{n.subject}}
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>
